@@ -1,7 +1,7 @@
 #!/bin/bash
 # -*- mode: julia -*-
 #=
-exec julia --project=. --compile=min --color=yes --startup-file=no -e "include(popfirst!(ARGS))" "${BASH_SOURCE[0]}" "$@"
+exec julia --project=. --color=yes --startup-file=no -e "include(popfirst!(ARGS))" "${BASH_SOURCE[0]}" "$@"
 =#
 
 include("common.jl")
